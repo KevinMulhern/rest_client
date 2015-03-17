@@ -12,6 +12,7 @@ input = gets.chomp
 input = input.split(" ")
 input = input.join("+")
 
+# setting the output variable to be equal to the result of the google url with the input parameters included.
 output = RestClient.get "http://www.google.com/#q=#{input}"
 output = output.to_str
 
